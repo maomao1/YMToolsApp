@@ -1,0 +1,20 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform:ios,’9.0’
+use_frameworks!
+targetsArray = ['YMTools']
+targetsArray.each do |t|
+    target t do
+	pod 'Masonry'
+    pod 'AFNetworking'
+    pod 'FDFullscreenPopGesture'
+    pod 'SDWebImage'
+    pod 'SDCycleScrollView'
+    pod 'YYModel'
+    pod 'MJRefresh'
+    pod 'MBProgressHUD'
+    pod 'DMProgressHUD'
+    pod 'YYCache'
+    pod 'IQKeyboardManager' #iOS8 and later
+  end
+end
+
