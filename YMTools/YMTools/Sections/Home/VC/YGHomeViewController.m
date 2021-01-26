@@ -19,9 +19,9 @@
     [self configViews];
 }
 -(void)configViews{
-    [self.view addSubview:_mainView];
+    [self.view addSubview:self.mainView];
     [_mainView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(self.view);
+        make.top.left.bottom.right.equalTo(self.view);
     }];
 }
 -(YGHomeView *)mainView{
