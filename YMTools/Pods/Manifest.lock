@@ -25,6 +25,8 @@ PODS:
   - SDWebImage (5.10.0):
     - SDWebImage/Core (= 5.10.0)
   - SDWebImage/Core (5.10.0)
+  - TesseractOCRiOS (5.0.1)
+  - TZImagePickerController (3.5.4)
   - YYCache (1.0.4)
   - YYModel (1.0.4)
 
@@ -38,6 +40,8 @@ DEPENDENCIES:
   - MJRefresh
   - SDCycleScrollView
   - SDWebImage
+  - TesseractOCRiOS
+  - TZImagePickerController
   - YYCache
   - YYModel
 
@@ -52,6 +56,8 @@ SPEC REPOS:
     - MJRefresh
     - SDCycleScrollView
     - SDWebImage
+    - TesseractOCRiOS
+    - TZImagePickerController
     - YYCache
     - YYModel
 
@@ -65,9 +71,11 @@ SPEC CHECKSUMS:
   MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
   SDCycleScrollView: a0d74c3384caa72bdfc81470bdbc8c14b3e1fbcf
   SDWebImage: 9169792e9eec3e45bba2a0c02f74bf8bd922d1ee
+  TesseractOCRiOS: 2c189465f86abb030d0c5141c90da9705b647854
+  TZImagePickerController: 891421e1fa0d8dfa295388e1f8a8ce2d5152ae88
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 0077358d4e4a053dfdd4ce6163c23596776d6961
+PODFILE CHECKSUM: ed83d3f2a0c454f1e5bd41d62d593765739b66c2
 
 COCOAPODS: 1.8.4

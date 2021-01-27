@@ -15,5 +15,6 @@
 #import "IQKeyboardManager.h"
 #import "UIImageView+WebCache.h"
 #import "UINavigationController+FDFullscreenPopGesture.h"
-
+#import <TesseractOCR/TesseractOCR.h>
+#import "TZImagePickerController.h"
 #endif /* PrefixHeader_pch */

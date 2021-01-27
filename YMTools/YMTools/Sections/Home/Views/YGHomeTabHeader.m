@@ -42,8 +42,8 @@
             make.size.mas_equalTo(CGSizeMake(kItemSizeWidth, kItemSizeWidth));
         }];
         UILabel *titleLabel = [[UILabel alloc]init];
-        titleLabel.textColor = UIColorFromRGBValue(0x333333);
-        titleLabel.font = [UIFont systemFontOfSize:18];
+        titleLabel.textColor = UIColorFromRGBValue(0x666666);
+        titleLabel.font = [UIFont systemFontOfSize:15];
         titleLabel.textAlignment = NSTextAlignmentCenter;
         titleLabel.text = titles[i];
         [self addSubview:titleLabel];
@@ -55,7 +55,27 @@
     }
 }
 -(void)btnClick:(UIButton*)btn{
-    
+    NSInteger tag = btn.tag - 100001;
+    if (tag == 0) {
+        if ([self.delegate respondsToSelector:@selector(takePhotoCallBack)]) {
+            [self.delegate takePhotoCallBack];
+        }
+    }
+    if (tag == 1) {
+        if ([self.delegate respondsToSelector:@selector(fanyiCallBack)]) {
+            [self.delegate fanyiCallBack];
+        }
+    }
+    if (tag == 2) {
+        if ([self.delegate respondsToSelector:@selector(fapiaoCallBack)]) {
+            [self.delegate fapiaoCallBack];
+        }
+    }
+    if (tag == 3) {
+        if ([self.delegate respondsToSelector:@selector(IdCardCallBack)]) {
+            [self.delegate IdCardCallBack];
+        }
+    }
 }
 - (SDCycleScrollView *)scrollView {
     if (!_scrollView) {

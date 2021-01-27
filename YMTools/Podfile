@@ -15,6 +15,11 @@ targetsArray.each do |t|
     pod 'DMProgressHUD'
     pod 'YYCache'
     pod 'IQKeyboardManager' #iOS8 and later
+    pod 'TesseractOCRiOS'
+    pod 'OpenCV'
+    pod 'JPImageresizerView'
+    pod 'TZImagePickerController'
+    
   end
 end
 

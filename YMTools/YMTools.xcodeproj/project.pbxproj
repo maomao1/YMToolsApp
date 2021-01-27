@@ -15,6 +15,8 @@
 		B47DD15525BFBFCC0032E2BC /* UIView+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = B47DD15425BFBFCC0032E2BC /* UIView+Custom.m */; };
 		B47DD15B25BFC0CE0032E2BC /* YGRecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B47DD15A25BFC0CE0032E2BC /* YGRecordCell.m */; };
 		B47DD16125BFCBFA0032E2BC /* YGHomeTabHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = B47DD16025BFCBFA0032E2BC /* YGHomeTabHeader.m */; };
+		B47DD23625C117620032E2BC /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = B47DD23525C117620032E2BC /* tessdata */; };
+		B47DD24E25C16FB80032E2BC /* YGRecogDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B47DD24D25C16FB80032E2BC /* YGRecogDetailViewController.m */; };
 		B4AC2DE425B82163000FBBC5 /* YGBaseNavgationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4AC2DE025B82163000FBBC5 /* YGBaseNavgationViewController.m */; };
 		B4AC2DE525B82163000FBBC5 /* YGBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4AC2DE125B82163000FBBC5 /* YGBaseViewController.m */; };
 		B4AC2DED25B82383000FBBC5 /* YGTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4AC2DEA25B82383000FBBC5 /* YGTabBarController.m */; };
@@ -63,6 +65,9 @@
 		B47DD15A25BFC0CE0032E2BC /* YGRecordCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YGRecordCell.m; sourceTree = "<group>"; };
 		B47DD15F25BFCBFA0032E2BC /* YGHomeTabHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YGHomeTabHeader.h; sourceTree = "<group>"; };
 		B47DD16025BFCBFA0032E2BC /* YGHomeTabHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YGHomeTabHeader.m; sourceTree = "<group>"; };
+		B47DD23525C117620032E2BC /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		B47DD24C25C16FB80032E2BC /* YGRecogDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YGRecogDetailViewController.h; sourceTree = "<group>"; };
+		B47DD24D25C16FB80032E2BC /* YGRecogDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YGRecogDetailViewController.m; sourceTree = "<group>"; };
 		B4AC2DD525B81FA8000FBBC5 /* Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Theme.h; sourceTree = "<group>"; };
 		B4AC2DDC25B82043000FBBC5 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		B4AC2DE025B82163000FBBC5 /* YGBaseNavgationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGBaseNavgationViewController.m; sourceTree = "<group>"; };
@@ -187,6 +192,8 @@
 			children = (
 				B47DD14325BA657E0032E2BC /* YGHomeViewController.m */,
 				B47DD14425BA657E0032E2BC /* YGHomeViewController.h */,
+				B47DD24C25C16FB80032E2BC /* YGRecogDetailViewController.h */,
+				B47DD24D25C16FB80032E2BC /* YGRecogDetailViewController.m */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -244,6 +251,7 @@
 		B4A4047925B7D3C1000E4E21 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				B47DD23525C117620032E2BC /* tessdata */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -461,6 +469,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4BCD30E25B071F200A0232E /* LaunchScreen.storyboard in Resources */,
+				B47DD23625C117620032E2BC /* tessdata in Resources */,
 				B4BCD30B25B071F200A0232E /* Assets.xcassets in Resources */,
 				B4BCD30925B071F100A0232E /* Main.storyboard in Resources */,
 			);
@@ -539,6 +548,7 @@
 				B47DD13D25BA656E0032E2BC /* YGMineViewController.m in Sources */,
 				B4BCD31125B071F200A0232E /* main.m in Sources */,
 				B4AC2DE525B82163000FBBC5 /* YGBaseViewController.m in Sources */,
+				B47DD24E25C16FB80032E2BC /* YGRecogDetailViewController.m in Sources */,
 				B4AC2DE425B82163000FBBC5 /* YGBaseNavgationViewController.m in Sources */,
 				B47DD0D725B82AD60032E2BC /* UIImage+Color.m in Sources */,
 				B4AC2DED25B82383000FBBC5 /* YGTabBarController.m in Sources */,
@@ -717,6 +727,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N34GJH3SRD;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/YMTools/PrefixHeader.pch";
 				INFOPLIST_FILE = YMTools/Info.plist;
@@ -724,7 +735,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jjhb.cn.YMTools;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jingjue.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -737,6 +748,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N34GJH3SRD;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/YMTools/PrefixHeader.pch";
 				INFOPLIST_FILE = YMTools/Info.plist;
@@ -744,7 +756,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jjhb.cn.YMTools;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jingjue.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
