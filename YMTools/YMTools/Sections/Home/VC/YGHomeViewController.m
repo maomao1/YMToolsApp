@@ -7,7 +7,11 @@
 
 #import "YGHomeViewController.h"
 #import "YGHomeView.h"
-@interface YGHomeViewController ()<YGHomeTabHeaderDelegate,TZImagePickerControllerDelegate,G8TesseractDelegate>
+#import "YGPhotoRecognizeManager.h"
+#import "YGRecogDetailViewController.h"
+#import "YGDateTools.h"
+
+@interface YGHomeViewController ()<YGHomeTabHeaderDelegate,TZImagePickerControllerDelegate>
 @property (nonatomic , strong) YGHomeView *mainView;
 
 @end
@@ -32,29 +36,24 @@
     return  _mainView;
 }
 -(void)YgRecognizeImageWithTesseract:(UIImage*)image{
-   
-    G8Tesseract *CardTesseract = [[G8Tesseract alloc] initWithLanguage:@"eng+chi_sim"];
-    CardTesseract.image = [image g8_blackAndWhite];
-    CardTesseract.image = image;
-    [CardTesseract recognize];
-    NSLog(@"%@",CardTesseract.recognizedText);
-//    G8RecognitionOperation *operation = [[G8RecognitionOperation alloc] initWithLanguage:@"eng+chi_sim"];
-//    operation.tesseract.engineMode = G8OCREngineModeTesseractOnly;
-//    operation.tesseract.pageSegmentationMode = G8PageSegmentationModeAutoOnly;
-//    operation.delegate = self;
-//    operation.recognitionCompleteBlock = ^(G8Tesseract *tesseract) {
-//        NSString *recognizedText = tesseract.recognizedText;
-//        NSLog(@"%@", recognizedText);
-//        
-//    };
-    //
-    
-     //print the progress infos
-    
-
+    kWeakSelf;
+    [YGLoadingTools beginLoading];
+    [[YGPhotoRecognizeManager recognizeCardManager] recognizeWithImage:image compleate:^(NSString * _Nonnull text) {
+        YGRecogResultModel *model = [[YGRecogResultModel alloc]init];
+        model.le_content = text;
+        model.le_type    = @"0";
+        model.le_time    = [YGDateTools getNowTimeTimestamp];
+        [YGLoadingTools endLoading];
+        [weakSelf pushResultVC:model];
+    }];
 }
-- (void)progressImageRecognitionForTesseract:(G8Tesseract *)tesseract {
-    NSLog(@"progress: %lu", (unsigned long)tesseract.progress);
+-(void)pushResultVC:(YGRecogResultModel*)model{
+    
+    YGRecogDetailViewController *regcogDetailVC = [YGRecogDetailViewController new];
+    regcogDetailVC.models = model;
+    regcogDetailVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:regcogDetailVC animated:YES];
+    
 }
 /****---YGHomeTabHeaderDelegate---****/
 -(void)takePhotoCallBack{

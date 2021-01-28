@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		566A7009250A84FB36D78D49 /* Pods_YMTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CFB20EFE047912E7A2F0E97 /* Pods_YMTools.framework */; };
+		B426442425C291E300CD1A72 /* FSTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = B426442225C291E300CD1A72 /* FSTextView.m */; };
+		B426442C25C2966A00CD1A72 /* YTGBasicEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = B426442A25C2966A00CD1A72 /* YTGBasicEncode.m */; };
+		B426442D25C2966A00CD1A72 /* YTGBasicModels.m in Sources */ = {isa = PBXBuildFile; fileRef = B426442B25C2966A00CD1A72 /* YTGBasicModels.m */; };
+		B426443325C296C500CD1A72 /* YGRecogResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B426443225C296C500CD1A72 /* YGRecogResultModel.m */; };
+		B426443C25C29AE000CD1A72 /* YGUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B426443825C29AE000CD1A72 /* YGUtils.m */; };
+		B426443D25C29AE000CD1A72 /* YGAlertToast.m in Sources */ = {isa = PBXBuildFile; fileRef = B426443925C29AE000CD1A72 /* YGAlertToast.m */; };
+		B426444725C2A5C600CD1A72 /* YGPhotoRecognizeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B426444625C2A5C600CD1A72 /* YGPhotoRecognizeManager.m */; };
+		B426445025C2AB8600CD1A72 /* YGDateTools.m in Sources */ = {isa = PBXBuildFile; fileRef = B426444F25C2AB8600CD1A72 /* YGDateTools.m */; };
+		B426445625C2C01800CD1A72 /* YGLoadingTools.m in Sources */ = {isa = PBXBuildFile; fileRef = B426445525C2C01800CD1A72 /* YGLoadingTools.m */; };
+		B426445C25C2C16400CD1A72 /* YMTools.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B426445A25C2C16400CD1A72 /* YMTools.xcdatamodeld */; };
+		B426446425C2C2BC00CD1A72 /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B426446325C2C2BC00CD1A72 /* CoreDataManager.m */; };
 		B47DD0D725B82AD60032E2BC /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = B47DD0D625B82AD60032E2BC /* UIImage+Color.m */; };
 		B47DD13D25BA656E0032E2BC /* YGMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B47DD13C25BA656E0032E2BC /* YGMineViewController.m */; };
 		B47DD14625BA657E0032E2BC /* YGHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B47DD14325BA657E0032E2BC /* YGHomeViewController.m */; };
@@ -30,6 +41,7 @@
 		B4BCD31125B071F200A0232E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B4BCD31025B071F200A0232E /* main.m */; };
 		B4BCD31B25B071F200A0232E /* YMToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4BCD31A25B071F200A0232E /* YMToolsTests.m */; };
 		B4BCD32625B071F200A0232E /* YMToolsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4BCD32525B071F200A0232E /* YMToolsUITests.m */; };
+		B4E0D0F025C28A57007C265B /* YGRecogDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E0D0EF25C28A57007C265B /* YGRecogDetailView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +63,27 @@
 
 /* Begin PBXFileReference section */
 		4CFB20EFE047912E7A2F0E97 /* Pods_YMTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YMTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B426442225C291E300CD1A72 /* FSTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSTextView.m; sourceTree = "<group>"; };
+		B426442325C291E300CD1A72 /* FSTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSTextView.h; sourceTree = "<group>"; };
+		B426442825C2966A00CD1A72 /* YTGBasicModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTGBasicModels.h; sourceTree = "<group>"; };
+		B426442925C2966A00CD1A72 /* YTGBasicEncode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTGBasicEncode.h; sourceTree = "<group>"; };
+		B426442A25C2966A00CD1A72 /* YTGBasicEncode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTGBasicEncode.m; sourceTree = "<group>"; };
+		B426442B25C2966A00CD1A72 /* YTGBasicModels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTGBasicModels.m; sourceTree = "<group>"; };
+		B426443125C296C500CD1A72 /* YGRecogResultModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YGRecogResultModel.h; sourceTree = "<group>"; };
+		B426443225C296C500CD1A72 /* YGRecogResultModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YGRecogResultModel.m; sourceTree = "<group>"; };
+		B426443825C29AE000CD1A72 /* YGUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGUtils.m; sourceTree = "<group>"; };
+		B426443925C29AE000CD1A72 /* YGAlertToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGAlertToast.m; sourceTree = "<group>"; };
+		B426443A25C29AE000CD1A72 /* YGUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGUtils.h; sourceTree = "<group>"; };
+		B426443B25C29AE000CD1A72 /* YGAlertToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGAlertToast.h; sourceTree = "<group>"; };
+		B426444525C2A5C600CD1A72 /* YGPhotoRecognizeManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YGPhotoRecognizeManager.h; sourceTree = "<group>"; };
+		B426444625C2A5C600CD1A72 /* YGPhotoRecognizeManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YGPhotoRecognizeManager.m; sourceTree = "<group>"; };
+		B426444E25C2AB8600CD1A72 /* YGDateTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGDateTools.h; sourceTree = "<group>"; };
+		B426444F25C2AB8600CD1A72 /* YGDateTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGDateTools.m; sourceTree = "<group>"; };
+		B426445425C2C01800CD1A72 /* YGLoadingTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGLoadingTools.h; sourceTree = "<group>"; };
+		B426445525C2C01800CD1A72 /* YGLoadingTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGLoadingTools.m; sourceTree = "<group>"; };
+		B426445B25C2C16400CD1A72 /* YMTools.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = YMTools.xcdatamodel; sourceTree = "<group>"; };
+		B426446225C2C2BC00CD1A72 /* CoreDataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
+		B426446325C2C2BC00CD1A72 /* CoreDataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
 		B47DD0D525B82AD60032E2BC /* UIImage+Color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
 		B47DD0D625B82AD60032E2BC /* UIImage+Color.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
 		B47DD13B25BA656E0032E2BC /* YGMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGMineViewController.h; sourceTree = "<group>"; };
@@ -96,6 +129,8 @@
 		B4BCD32125B071F200A0232E /* YMToolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YMToolsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4BCD32525B071F200A0232E /* YMToolsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMToolsUITests.m; sourceTree = "<group>"; };
 		B4BCD32725B071F200A0232E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4E0D0EE25C28A57007C265B /* YGRecogDetailView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YGRecogDetailView.h; sourceTree = "<group>"; };
+		B4E0D0EF25C28A57007C265B /* YGRecogDetailView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YGRecogDetailView.m; sourceTree = "<group>"; };
 		C3DA6ACDC0F84972DD1398C1 /* Pods-YMTools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YMTools.release.xcconfig"; path = "Target Support Files/Pods-YMTools/Pods-YMTools.release.xcconfig"; sourceTree = "<group>"; };
 		F1E667C842B84507F92F5A1C /* Pods-YMTools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YMTools.debug.xcconfig"; path = "Target Support Files/Pods-YMTools/Pods-YMTools.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,6 +161,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B426442125C2917000CD1A72 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				B426442325C291E300CD1A72 /* FSTextView.h */,
+				B426442225C291E300CD1A72 /* FSTextView.m */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		B426443725C29AE000CD1A72 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B426445425C2C01800CD1A72 /* YGLoadingTools.h */,
+				B426445525C2C01800CD1A72 /* YGLoadingTools.m */,
+				B426444425C2A58D00CD1A72 /* PhotoRecognize */,
+				B426443A25C29AE000CD1A72 /* YGUtils.h */,
+				B426443825C29AE000CD1A72 /* YGUtils.m */,
+				B426444E25C2AB8600CD1A72 /* YGDateTools.h */,
+				B426444F25C2AB8600CD1A72 /* YGDateTools.m */,
+				B426443B25C29AE000CD1A72 /* YGAlertToast.h */,
+				B426443925C29AE000CD1A72 /* YGAlertToast.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B426444425C2A58D00CD1A72 /* PhotoRecognize */ = {
+			isa = PBXGroup;
+			children = (
+				B426444525C2A5C600CD1A72 /* YGPhotoRecognizeManager.h */,
+				B426444625C2A5C600CD1A72 /* YGPhotoRecognizeManager.m */,
+			);
+			path = PhotoRecognize;
+			sourceTree = "<group>";
+		};
+		B426446025C2C2A100CD1A72 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				B426446125C2C2A100CD1A72 /* CoreDataManager */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		B426446125C2C2A100CD1A72 /* CoreDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				B426446225C2C2BC00CD1A72 /* CoreDataManager.h */,
+				B426446325C2C2BC00CD1A72 /* CoreDataManager.m */,
+			);
+			path = CoreDataManager;
+			sourceTree = "<group>";
+		};
 		B44F81BA25B824EB006F08FD /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +269,8 @@
 		B47DD14125BA657E0032E2BC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B426443125C296C500CD1A72 /* YGRecogResultModel.h */,
+				B426443225C296C500CD1A72 /* YGRecogResultModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -207,6 +295,8 @@
 				B47DD15A25BFC0CE0032E2BC /* YGRecordCell.m */,
 				B47DD15F25BFCBFA0032E2BC /* YGHomeTabHeader.h */,
 				B47DD16025BFCBFA0032E2BC /* YGHomeTabHeader.m */,
+				B4E0D0EE25C28A57007C265B /* YGRecogDetailView.h */,
+				B4E0D0EF25C28A57007C265B /* YGRecogDetailView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -279,6 +369,10 @@
 		B4AC2DD425B81F5E000FBBC5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B426442925C2966A00CD1A72 /* YTGBasicEncode.h */,
+				B426442A25C2966A00CD1A72 /* YTGBasicEncode.m */,
+				B426442825C2966A00CD1A72 /* YTGBasicModels.h */,
+				B426442B25C2966A00CD1A72 /* YTGBasicModels.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -308,6 +402,9 @@
 		B4BCD2FD25B071F100A0232E /* YMTools */ = {
 			isa = PBXGroup;
 			children = (
+				B426446025C2C2A100CD1A72 /* Manager */,
+				B426443725C29AE000CD1A72 /* Common */,
+				B426442125C2917000CD1A72 /* Vendor */,
 				B47DD0D425B82AAE0032E2BC /* Category */,
 				B4A4047A25B7D3D5000E4E21 /* Basic */,
 				B4A4047925B7D3C1000E4E21 /* Resource */,
@@ -325,6 +422,7 @@
 				B4BCD30F25B071F200A0232E /* Info.plist */,
 				B4BCD31025B071F200A0232E /* main.m */,
 				B4AC2DDC25B82043000FBBC5 /* PrefixHeader.pch */,
+				B426445A25C2C16400CD1A72 /* YMTools.xcdatamodeld */,
 			);
 			path = YMTools;
 			sourceTree = "<group>";
@@ -538,22 +636,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B426443D25C29AE000CD1A72 /* YGAlertToast.m in Sources */,
 				B47DD15525BFBFCC0032E2BC /* UIView+Custom.m in Sources */,
 				B4BCD30625B071F100A0232E /* ViewController.m in Sources */,
+				B426443325C296C500CD1A72 /* YGRecogResultModel.m in Sources */,
 				B4AC2DEE25B82383000FBBC5 /* YGTabBar.m in Sources */,
+				B426442C25C2966A00CD1A72 /* YTGBasicEncode.m in Sources */,
 				B4BCD30025B071F100A0232E /* AppDelegate.m in Sources */,
 				B47DD16125BFCBFA0032E2BC /* YGHomeTabHeader.m in Sources */,
+				B426445625C2C01800CD1A72 /* YGLoadingTools.m in Sources */,
 				B47DD14F25BFAEAA0032E2BC /* YGHomeView.m in Sources */,
 				B47DD14625BA657E0032E2BC /* YGHomeViewController.m in Sources */,
 				B47DD13D25BA656E0032E2BC /* YGMineViewController.m in Sources */,
 				B4BCD31125B071F200A0232E /* main.m in Sources */,
+				B4E0D0F025C28A57007C265B /* YGRecogDetailView.m in Sources */,
+				B426442425C291E300CD1A72 /* FSTextView.m in Sources */,
 				B4AC2DE525B82163000FBBC5 /* YGBaseViewController.m in Sources */,
+				B426442D25C2966A00CD1A72 /* YTGBasicModels.m in Sources */,
 				B47DD24E25C16FB80032E2BC /* YGRecogDetailViewController.m in Sources */,
 				B4AC2DE425B82163000FBBC5 /* YGBaseNavgationViewController.m in Sources */,
+				B426443C25C29AE000CD1A72 /* YGUtils.m in Sources */,
 				B47DD0D725B82AD60032E2BC /* UIImage+Color.m in Sources */,
 				B4AC2DED25B82383000FBBC5 /* YGTabBarController.m in Sources */,
+				B426446425C2C2BC00CD1A72 /* CoreDataManager.m in Sources */,
+				B426445025C2AB8600CD1A72 /* YGDateTools.m in Sources */,
+				B426445C25C2C16400CD1A72 /* YMTools.xcdatamodeld in Sources */,
 				B47DD15B25BFC0CE0032E2BC /* YGRecordCell.m in Sources */,
 				B4BCD30325B071F100A0232E /* SceneDelegate.m in Sources */,
+				B426444725C2A5C600CD1A72 /* YGPhotoRecognizeManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -874,6 +984,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B426445A25C2C16400CD1A72 /* YMTools.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B426445B25C2C16400CD1A72 /* YMTools.xcdatamodel */,
+			);
+			currentVersion = B426445B25C2C16400CD1A72 /* YMTools.xcdatamodel */;
+			path = YMTools.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B4BCD2F325B071F100A0232E /* Project object */;
 }

@@ -17,4 +17,8 @@
 #import "UINavigationController+FDFullscreenPopGesture.h"
 #import <TesseractOCR/TesseractOCR.h>
 #import "TZImagePickerController.h"
+#import "YGUtils.h"
+#import "YGAlertToast.h"
+#import "MBProgressHUD.h"
+#import "YGLoadingTools.h"
 #endif /* PrefixHeader_pch */

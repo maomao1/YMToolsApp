@@ -6,26 +6,34 @@
 //
 
 #import "YGRecogDetailViewController.h"
-
+#import "YGRecogDetailView.h"
 @interface YGRecogDetailViewController ()
-
+@property (nonatomic ,strong) YGRecogDetailView *mainView;
 @end
 
 @implementation YGRecogDetailViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self configViews];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(void)configViews{
+    self.headTitle = @"取字详情";
+    [self setRightBarItemWithImage: @""];
+    [self.view addSubview:self.mainView];
+    self.mainView.contentText.text = self.models.le_content;
+    [_mainView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.left.bottom.right.equalTo(self.view);
+    }];
 }
-*/
+-(void)rightBarItemEvent{
+    
+}
+-(YGRecogDetailView *)mainView{
+    if (!_mainView) {
+        _mainView = [[YGRecogDetailView alloc]init];
+    }
+    return  _mainView;
+}
 
 @end
